@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 /* shared style */
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: "Quicksand", serif;
 }
-.content-alignment{
+
+.content-alignment {
     padding: 0 140px;
 }
-:root{
+
+:root {
     --orange-color: #FEA301;
     --skyblue-color: #01ACFD;
     --skygreen-color: #05D4DF;
@@ -20,13 +23,14 @@ body{
 
 
 /* nav style */
-nav{
+nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 2% 0;
     align-items: center;
 }
-nav div ul{
+
+nav div ul {
     display: flex;
     gap: 5%;
     justify-content: center;
@@ -34,31 +38,39 @@ nav div ul{
     font-size: 1.25rem;
     font-weight: 700;
 }
-.logo-container{
+
+.logo-container {
     display: flex;
     align-items: center;
 }
-.logo-text{
+
+.logo-text {
     font-size: 2rem;
     font-weight: 700;
 }
-.home{
+
+.home {
     color: var(--orange-color);
 }
-.about{
+
+.about {
     color: var(--skyblue-color);
 }
-.facilities{
+
+.facilities {
     color: var(--skygreen-color);
 }
-.admission{
+
+.admission {
     color: var(--purple-color);
 }
-.btn{
+
+.btn {
     display: flex;
     justify-content: end;
 }
-.btn>button{
+
+.btn>button {
     padding: 10px 60px;
     color: white;
     border: none;
@@ -70,3 +82,57 @@ nav div ul{
 
 
 
+
+
+
+
+
+
+
+/* Footer Style */
+footer {
+    background-color: var(--skyblue-color);
+    color: white;
+    padding: 120px 150px 175px 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 150px;
+}
+
+.footer-logo-container {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-logo-container>img {
+    background-color: white;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
+
+.footer-about>h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.footer-about>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    list-style-type: none;
+}
+
+.get-in-touch {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.get-in-touch>h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}

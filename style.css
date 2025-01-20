@@ -70,7 +70,7 @@ nav div ul {
     justify-content: end;
 }
 
-.btn>button {
+.btn-common-style {
     padding: 10px 60px;
     color: white;
     border: none;
@@ -78,8 +78,42 @@ nav div ul {
     background-color: var(--orange-color);
     font-size: 1.25rem;
 }
-
-
+marquee{
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 20px;
+}
+/* banner style */
+.banner{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.banner-info>h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 70px;
+}
+.Empowering{
+    color: var(--orange-color);
+}
+.title-vision{
+    color: var(--skyblue-color);
+}
+.banner-info>p{
+    font-size: 1.25rem;
+    padding: 20px 0;
+    width: 60%;
+}
+.enroll-btn{
+    background: #000;
+}
+.banner-img{
+    width: 45%;
+}
+.banner-img>img{
+    width: 100%;
+}
 
 
 
@@ -96,7 +130,6 @@ footer {
     padding: 120px 150px 175px 150px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
     gap: 150px;
 }
 

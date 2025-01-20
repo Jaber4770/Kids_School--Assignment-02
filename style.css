@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* shared style */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Quicksand", serif;
+}
+.content-alignment{
+    padding: 0 140px;
+}
+:root{
+    --orange-color: #FEA301;
+    --skyblue-color: #01ACFD;
+    --skygreen-color: #05D4DF;
+    --purple-color: #5D58EF;
+}
+
+
+/* nav style */
+nav{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2% 0;
+    align-items: center;
+}
+nav div ul{
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.logo-text{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.home{
+    color: var(--orange-color);
+}
+.about{
+    color: var(--skyblue-color);
+}
+.facilities{
+    color: var(--skygreen-color);
+}
+.admission{
+    color: var(--purple-color);
+}
+.btn{
+    display: flex;
+    justify-content: end;
+}
+.btn>button{
+    padding: 10px 60px;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--orange-color);
+    font-size: 1.25rem;
+}
+
+
+
+

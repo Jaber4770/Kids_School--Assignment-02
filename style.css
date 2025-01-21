@@ -59,20 +59,24 @@ nav div ul {
     font-weight: 700;
 }
 
-.home {
+.home>a {
     color: var(--orange-color);
+    text-decoration: none;
 }
 
-.about {
+.about>a {
     color: var(--skyblue-color);
+    text-decoration: none;
 }
 
-.facilities {
+.facilities>a {
     color: var(--skygreen-color);
+    text-decoration: none;
 }
 
-.admission {
+.admission>a {
     color: var(--purple-color);
+    text-decoration: none;
 }
 
 .btn {
@@ -219,11 +223,12 @@ main {
 }
 
 /* our stories style */
-.our-stories-title{
+.our-stories-title {
     padding: 20px 0;
     text-align: center;
     margin-bottom: 20px;
 }
+
 .our-stories {
     background-image: url(assets/bg.png), linear-gradient(0deg, rgba(247, 167, 31, 0.404), rgba(231, 231, 231, 0.068));
     background-position: center;
@@ -239,7 +244,7 @@ main {
     text-align: center;
     display: flex;
     justify-content: center;
-    padding: 70px 0px 0px 0px; 
+    padding: 70px 0px 0px 0px;
 }
 
 .sotries-card-container {
@@ -348,4 +353,86 @@ footer {
 .get-in-touch>h3 {
     font-size: 1.5rem;
     font-weight: 700;
+}
+
+/* responsive design for mobile */
+@media screen and (max-width: 576px) {
+    .content-alignment {
+        padding: 10px;
+    }
+
+    .content-alignment {
+        padding: 0;
+    }
+
+    nav div ul,
+    .btn,
+    .curriculum-navigator,
+    .stories-big-cart,
+    .logo-container>h1 {
+        display: none;
+    }
+    nav{
+        border-bottom: 1px solid var(--orange-color);
+        padding-bottom: 5px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        ;
+        text-align: center;
+    }
+
+    .banner-info h1 {
+        font-size: 2.5rem;
+        line-height: 45px;
+    }
+
+    .banner-info p {
+        width: 100%;
+    }
+
+    .banner-img {
+        width: 95vw;
+    }
+
+    .curriculum-container,
+    .sotries-card-container {
+        flex-direction: column;
+    }
+
+    .stories-small-cart {
+        display: grid;
+        grid-template-columns: calc((100% - 20px) / 2) calc((100% - 20px) / 2);
+        column-gap: 20px;
+    }
+
+    .our-stories, 
+    .standard-curriculumn{
+        padding: 0 10px;
+    }
+
+    .standard-title {
+        font-size: 2.25rem;
+    }
+
+    .cart-date {
+        padding: 5px 2px;
+        font-size: 0.9rem;
+        margin-top: -53px;
+    }
+
+    .card-info h2 {
+        font-size: 1rem;
+    }
+
+    .view-btn {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 50px 10px;
+    }
 }

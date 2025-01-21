@@ -32,6 +32,10 @@ section {
     padding-bottom: 50px;
 }
 
+.hambar {
+    display: none;
+}
+
 /* nav style */
 nav {
     display: grid;
@@ -372,9 +376,20 @@ footer {
     .logo-container>h1 {
         display: none;
     }
-    nav{
+
+    nav {
         border-bottom: 1px solid var(--orange-color);
         padding-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo-container{
+        padding-bottom: 10px;
+    }
+    .hambar {
+        display: visible;
+        font-size: 3rem;
+        padding-right: 10px;
     }
 
     .banner {
@@ -407,8 +422,8 @@ footer {
         column-gap: 20px;
     }
 
-    .our-stories, 
-    .standard-curriculumn{
+    .our-stories,
+    .standard-curriculumn {
         padding: 0 10px;
     }
 
@@ -432,7 +447,7 @@ footer {
 
     footer {
         grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
+        gap: 30px;
         padding: 50px 10px;
     }
 }

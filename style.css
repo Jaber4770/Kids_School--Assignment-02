@@ -169,6 +169,27 @@ main{
 .middle-div>a{
     color: var(--purple-color);
 }
+.curriculum-navigator>ul{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style-type: none;
+    margin: 50px 0;
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+.curriculum-navigator>ul>li{
+    background-color: var(--orange-color);
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.curriculum-navigator>ul>li>a{
+    color: white;}
 
 
 

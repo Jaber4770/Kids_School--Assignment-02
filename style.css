@@ -19,10 +19,17 @@ body {
     --skyblue-color: #01ACFD;
     --skygreen-color: #05D4DF;
     --purple-color: #5D58EF;
-    --description-color:#808080;
+    --description-color: #808080;
 }
-section{
+
+section {
     margin: 50px 0;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 50px;
 }
 
 /* nav style */
@@ -81,95 +88,112 @@ nav div ul {
     background-color: var(--orange-color);
     font-size: 1.25rem;
 }
-marquee{
+
+marquee {
     font-size: 1.25rem;
     font-weight: 700;
     padding: 20px;
 }
+
 /* banner style */
-.banner{
+.banner {
     display: flex;
     align-items: center;
     gap: 50px;
 }
-.banner-info>h1{
+
+.banner-info>h1 {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 70px;
 }
-.Empowering{
+
+.Empowering {
     color: var(--orange-color);
 }
-.title-vision{
+
+.title-vision {
     color: var(--skyblue-color);
 }
-.banner-info>p{
+
+.banner-info>p {
     font-size: 1.25rem;
     padding: 20px 0;
     width: 60%;
 }
-.enroll-btn{
+
+.enroll-btn {
     background: #000;
 }
-.banner-img{
+
+.banner-img {
     width: 45%;
 }
-.banner-img>img{
+
+.banner-img>img {
     width: 100%;
 }
 
 /* main style */
-main{
+main {
     background-image: url(assets/bg.png);
 }
-.standard-curriculumn{
+
+.standard-curriculumn {
     text-align: center;
 }
-.standard-curriculumn h1{
-    font-size: 3rem;
-    font-weight: 700;
-    padding-bottom: 50px;
-}
-.curriculum-container{
+
+.curriculum-container {
     display: flex;
     gap: 30px;
 }
-.curriculum-container>div{
+
+.curriculum-container>div {
     padding: 52px 40px;
     border-radius: 19px;
     border: 1px solid #fff4dc;
     box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
 }
-.kinder-div{
+
+.kinder-div {
     background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
 }
-.elementary-div{
+
+.elementary-div {
     background: linear-gradient(180deg, #FFF4DC 0%, rgba(255, 255, 255, 0.00) 40%), #FFF
 }
-.middle-div{
+
+.middle-div {
     background: linear-gradient(180deg, #EEE1FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
 }
-.curriculum-container>div>h2{
+
+.curriculum-container>div>h2 {
     margin: 32px 0;
 }
-.curriculum-container>div>p{
+
+.curriculum-container>div>p {
     padding-bottom: 32px;
     color: var(--description-color);
 }
-.curriculum-container>div>a{
+
+.curriculum-container>div>a {
     text-decoration: none;
     font-weight: 700;
 }
-.kinder-div>a{
+
+.kinder-div>a {
     color: var(--skyblue-color);
 }
-.elementary-div>a{
+
+.elementary-div>a {
     color: var(--orange-color);
 }
-.middle-div>a{
+
+.middle-div>a {
     color: var(--purple-color);
 }
-.curriculum-navigator>ul{
+
+.curriculum-navigator>ul {
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -178,7 +202,8 @@ main{
     font-size: 1.25rem;
     font-weight: 900;
 }
-.curriculum-navigator>ul>li{
+
+.curriculum-navigator>ul>li {
     background-color: var(--orange-color);
     width: 20px;
     height: 20px;
@@ -188,11 +213,95 @@ main{
     align-items: center;
     border-radius: 50%;
 }
-.curriculum-navigator>ul>li>a{
-    color: white;}
 
+.curriculum-navigator>ul>li>a {
+    color: white;
+}
 
+/* our stories style */
+.our-stories-title{
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.our-stories {
+    background-image: url(assets/bg.png), linear-gradient(0deg, rgba(247, 167, 31, 0.404), rgba(231, 231, 231, 0.068));
+    background-position: center;
+    margin-bottom: 0;
+    padding-bottom: 50px;
+}
 
+.view-btn {
+    background-color: #000;
+}
+
+.view-all-btn {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 70px 0px 0px 0px; 
+}
+
+.sotries-card-container {
+    display: flex;
+    gap: 20px;
+}
+
+.stories-small-cart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stories-big-cart,
+.stories-small-cart>div {
+    background-color: white;
+    border-radius: 16px;
+}
+
+.stories-small-cart div>img,
+.stories-big-cart>img {
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.card-info {
+    padding: 34px;
+    position: relative
+}
+
+.stories-big-cart>div>h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+.stories-big-cart>div>p {
+    color: var(--description-color);
+}
+
+.cart-date {
+    border-radius: 48px;
+    padding: 14.38px 18.876px 15.339px 19.174px;
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    margin-top: -65px;
+    display: inline-block;
+}
+
+.cart-sky {
+    background-color: #3CD8E8;
+}
+
+.cart-green {
+    background-color: #95B226;
+}
+
+.cart-purple {
+    background-color: #5D58F0;
+}
 
 /* Footer Style */
 footer {

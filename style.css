@@ -19,8 +19,11 @@ body {
     --skyblue-color: #01ACFD;
     --skygreen-color: #05D4DF;
     --purple-color: #5D58EF;
+    --description-color:#808080;
 }
-
+section{
+    margin: 50px 0;
+}
 
 /* nav style */
 nav {
@@ -115,10 +118,57 @@ marquee{
     width: 100%;
 }
 
-
-
-
-
+/* main style */
+main{
+    background-image: url(assets/bg.png);
+}
+.standard-curriculumn{
+    text-align: center;
+}
+.standard-curriculumn h1{
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+.curriculum-container{
+    display: flex;
+    gap: 30px;
+}
+.curriculum-container>div{
+    padding: 52px 40px;
+    border-radius: 19px;
+    border: 1px solid #fff4dc;
+    box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+}
+.kinder-div{
+    background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+}
+.elementary-div{
+    background: linear-gradient(180deg, #FFF4DC 0%, rgba(255, 255, 255, 0.00) 40%), #FFF
+}
+.middle-div{
+    background: linear-gradient(180deg, #EEE1FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+}
+.curriculum-container>div>h2{
+    margin: 32px 0;
+}
+.curriculum-container>div>p{
+    padding-bottom: 32px;
+    color: var(--description-color);
+}
+.curriculum-container>div>a{
+    text-decoration: none;
+    font-weight: 700;
+}
+.kinder-div>a{
+    color: var(--skyblue-color);
+}
+.elementary-div>a{
+    color: var(--orange-color);
+}
+.middle-div>a{
+    color: var(--purple-color);
+}
 
 
 

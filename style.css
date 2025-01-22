@@ -32,9 +32,7 @@ section {
     padding-bottom: 50px;
 }
 
-.hambar {
-    display: none;
-}
+
 
 /* nav style */
 nav {
@@ -95,6 +93,12 @@ nav div ul {
     border-radius: 12px;
     background-color: var(--orange-color);
     font-size: 1.25rem;
+}
+
+.fa-bars,
+.fa-solid,
+.hambar-icon {
+    display: none !important;
 }
 
 marquee {
@@ -220,6 +224,11 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    transition: 0.3s;
+}
+
+.curriculum-navigator>ul>li:hover {
+    box-shadow: 0px 0px 15px 2px var(--orange-color);
 }
 
 .curriculum-navigator>ul>li>a {
@@ -348,6 +357,10 @@ footer {
     list-style-type: none;
 }
 
+.footer-about>ul>li>a {
+    color: white;
+}
+
 .get-in-touch {
     display: flex;
     flex-direction: column;
@@ -383,11 +396,15 @@ footer {
         display: flex;
         justify-content: space-between;
     }
-    .logo-container{
+
+    .logo-container {
         padding-bottom: 10px;
     }
-    .hambar {
-        display: visible;
+
+    .fa-bars,
+    .fa-solid,
+    .hambar-icon {
+        display: inline-block !important;
         font-size: 3rem;
         padding-right: 10px;
     }
